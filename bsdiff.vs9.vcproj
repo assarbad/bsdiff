@@ -4,6 +4,7 @@
 	Version="9.00"
 	Name="bsdiff"
 	ProjectGUID="{5369FD2B-048D-4765-AB52-2EABC55C2B7E}"
+	RootNamespace="bsdiff"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="0"
 	>
@@ -20,6 +21,7 @@
 			OutputDirectory="intermediate\vs9_$(ProjectName)32_$(ConfigurationName)"
 			IntermediateDirectory="$(OutDir)"
 			ConfigurationType="1"
+			UseOfMFC="1"
 			CharacterSet="1"
 			BuildLogFile="BuildLog_$(TargetName).html"
 			>
@@ -45,7 +47,7 @@
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="3"
+				RuntimeLibrary="1"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="false"
@@ -96,6 +98,7 @@
 			OutputDirectory="intermediate\vs9_$(ProjectName)32_$(ConfigurationName)"
 			IntermediateDirectory="$(OutDir)"
 			ConfigurationType="1"
+			UseOfMFC="1"
 			CharacterSet="1"
 			BuildLogFile="BuildLog_$(TargetName).html"
 			>
@@ -118,7 +121,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalIncludeDirectories=".;bzip2"
 				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="false"
