@@ -6,7 +6,7 @@
 ///
 ///////////////////////////////////////////////////////////////////////////////
 #ifndef __EXEVERSION_H_VERSION__
-#define __EXEVERSION_H_VERSION__ 2012121901
+#define __EXEVERSION_H_VERSION__ 2012121904
 
 #if defined(_MSC_VER) && (_MSC_VER >= 1020)
 #pragma once
@@ -24,13 +24,12 @@
 #define FILE_MAJVER            4 // major file version
 #define FILE_MINVER            3 // minor file version
 #define FILE_BUILD             _FILE_VERSION_BUILD // build number
-#define EXE_YEAR               2003-2005 // current year or timespan (e.g. 2003-2007)
 #define TEXT_WEBSITE           http:/##/www.daemonology.net/bsdiff/ // website
-#define TEXT_PRODUCTNAME       bsdiff // product's name
-#define TEXT_FILEDESC          Binary differ // component description
+#define TEXT_PRODUCTNAME       PROJNAME // product's name
+#define TEXT_FILEDESC          Binary delta algorithm bsdiff/bspatch, originally written for FreeBSD, ported to Win32 (Unicode) // component description
 #define TEXT_COMPANY           Oliver Schneider (assarbad.net) // company
-#define TEXT_MODULE            bsdiff // module name
-#define TEXT_COPYRIGHT         Copyright EXE_YEAR TEXT_COMPANY // copyright information
-#define TEXT_INTERNALNAME      bsdiff.exe // copyright information
+#define TEXT_MODULE            PROJNAME // module name
+#define TEXT_COPYRIGHT         Copyright 2003-2005 Colin Percival, Portions Copyright 1996-2010 Julian R Seward [bzip2], 2012 Oliver Schneider [bsdiff Win32 port] // copyright information
+#define TEXT_INTERNALNAME      PROJNAME##.exe // copyright information
 
 #endif // __EXEVERSION_H_VERSION__
