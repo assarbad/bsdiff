@@ -32,8 +32,14 @@ __FBSDID("$FreeBSD: src/usr.bin/bsdiff/bspatch/bspatch.c,v 1.1 2005/08/06 01:59:
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#if !(defined(_MSC_VER) && (_MSC_VER >= 1400) && defined(_WIN32))
 #include <err.h>
 #include <unistd.h>
+#define _tmain main
+#define _TCHAR char
+#else
+#include "win32msvc_glue.c"
+#endif // _WIN32 && _MSC_VER
 #include <fcntl.h>
 
 static off_t offtin(u_char *buf)
@@ -54,7 +60,7 @@ static off_t offtin(u_char *buf)
 	return y;
 }
 
-int main(int argc,char * argv[])
+int _tmain(int argc,_TCHAR * argv[])
 {
 	FILE * f, * cpf, * dpf, * epf;
 	BZFILE * cpfbz2, * dpfbz2, * epfbz2;

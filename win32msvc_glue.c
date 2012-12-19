@@ -28,6 +28,9 @@
 #include <tchar.h>
 #include <io.h>
 #include <stdarg.h>
+#include <sys/types.h>
+
+typedef signed __int64 ssize_t;
 
 static off_t ftello(FILE *stream)
 {
