@@ -183,6 +183,38 @@
 				RelativePath=".\bsdiff.c"
 				>
 			</File>
+			<Filter
+				Name="bzip2"
+				>
+				<File
+					RelativePath=".\bzip2\blocksort.c"
+					>
+				</File>
+				<File
+					RelativePath=".\bzip2\bzlib.c"
+					>
+				</File>
+				<File
+					RelativePath=".\bzip2\compress.c"
+					>
+				</File>
+				<File
+					RelativePath=".\bzip2\crctable.c"
+					>
+				</File>
+				<File
+					RelativePath=".\bzip2\decompress.c"
+					>
+				</File>
+				<File
+					RelativePath=".\bzip2\huffman.c"
+					>
+				</File>
+				<File
+					RelativePath=".\bzip2\randtable.c"
+					>
+				</File>
+			</Filter>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -200,6 +232,18 @@
 				RelativePath=".\exeversion.h"
 				>
 			</File>
+			<Filter
+				Name="bzip2"
+				>
+				<File
+					RelativePath=".\bzip2\bzlib.h"
+					>
+				</File>
+				<File
+					RelativePath=".\bzip2\bzlib_private.h"
+					>
+				</File>
+			</Filter>
 		</Filter>
 		<Filter
 			Name="Resource Files"
