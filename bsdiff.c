@@ -42,6 +42,8 @@ __FBSDID("$FreeBSD: src/usr.bin/bsdiff/bsdiff/bsdiff.c,v 1.1 2005/08/06 01:59:05
 #include "win32msvc_glue.c"
 #else
 #include <unistd.h>
+#define _tmain main
+#define _TCHAR char
 #endif // _WIN32 && _MSC_VER
 
 #define MIN(x,y) (((x)<(y)) ? (x) : (y))
@@ -199,7 +201,7 @@ static void offtout(off_t x,u_char *buf)
 	if(x<0) buf[7]|=0x80;
 }
 
-int main(int argc,char *argv[])
+int _tmain(int argc,_TCHAR *argv[])
 {
 	int fd;
 	u_char *old,*new;
