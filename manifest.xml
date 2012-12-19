@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
-	<description>bsdiff</description>
-	<assemblyIdentity version="4.3.0.0" name="bsdiff" type="win32"/>
+	<description>Binary diffing algorithm: bsdiff/bspatch, Win32 command line version (Unicode)</description>
 	<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
 		<application>
 			<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"/>

@@ -76,8 +76,9 @@
 			/>
 			<Tool
 				Name="VCManifestTool"
-				AdditionalManifestFiles="$(ProjectName).xml"
+				AdditionalManifestFiles="manifest.xml"
 				VerboseOutput="true"
+				AssemblyIdentity="&quot;$(ProjectName), version=4.3.0.0, type=win32&quot;"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -158,8 +159,9 @@
 			/>
 			<Tool
 				Name="VCManifestTool"
-				AdditionalManifestFiles="$(ProjectName).xml"
+				AdditionalManifestFiles="manifest.xml"
 				VerboseOutput="true"
+				AssemblyIdentity="&quot;$(ProjectName), version=4.3.0.0, type=win32&quot;"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
