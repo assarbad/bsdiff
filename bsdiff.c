@@ -31,12 +31,18 @@ __FBSDID("$FreeBSD: src/usr.bin/bsdiff/bsdiff/bsdiff.c,v 1.1 2005/08/06 01:59:05
 #include <sys/types.h>
 
 #include <bzlib.h>
+#ifndef _WIN32
 #include <err.h>
+#endif // _WIN32
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#if defined(_MSC_VER) && (_MSC_VER >= 1400) && defined(_WIN32)
+#include "win32msvc_glue.c"
+#else
 #include <unistd.h>
+#endif // _WIN32 && _MSC_VER
 
 #define MIN(x,y) (((x)<(y)) ? (x) : (y))
 
